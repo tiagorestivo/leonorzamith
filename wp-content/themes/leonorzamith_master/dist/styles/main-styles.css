@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat|Philosopher|Roboto|Playfair+Display');
+
+/* body {font-family: 'Roboto', sans-serif;} */
+body {
+	color: black;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	/* font-family: 'Courier', sans-serif; */
+	font-family: sans-serif, 'Helvetica';
+	}
+/* body {font-family: 'Philosopher', sans-serif;} */
+
+embed, iframe, img, object, video {
+	   max-width: none;
+	}
+	
+	/* <!-- CSS --> */
+	.fullscreen-bg {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		overflow: hidden;
+		z-index: -100;
+	}
+	
+	.fullscreen-bg__video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+/* background colors */
+body.home {background-color: #f6d4c4;}
+body.page-template-page-about {
+	height: 100vh;
+	background-color: #F9F2F2;
+}
+body.post-type-archive-digital, body.post-type-archive-acrylic {background-color: rgba(0, 0, 0, 0);}
+
+body.page-template-template-video {overflow: hidden;}
+body.page-template-template-video header {display:none;}
+body.page-template-template-video footer {display:none;}
+.page-template-template-video .container-fluid{
+	margin: 0!important;
+	padding: 0!important;
+}
+
+.showcase {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/* background: var(--primary-color) url('/wp-content/themes/leonorzamith_master/dist/styles/https:/traversymedia.com/downloads/cover.jpg') no-repeat center
+		center/cover; */
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+	/* height: calc(0.63vw)!important; */
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+}
+
+.entry-content a, .entry-content a:hover {color:black; text-decoration: underline;}
+
+/* HEADER */
+/* Reset bst navbar defaul */
+.navbar-default {background-color: transparent;border:none; /* border-top: 20px solid white; */}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {background-color: transparent;text-decoration: underline;}
+/* .navbar-default .navbar-header {float:none; text-align: center;margin-top: 80px;margin-bottom:80px;} */
+.navbar-default .navbar-brand {color:#000;font-size: 1em; float:none;}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left: auto;margin-right: auto;padding: 0;}
+
+/* Navbar Toggle */
+.navbar-toggle .icon-bar {background-color: white!important;}
+.navbar-default .navbar-toggle {border-color: white!important;}
+.navbar-toggle {margin-right: 25px!important;margin-top: 25px!important;margin-bottom: 25px!important;border: 2px solid transparent!important;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: transparent;}
+.nav>li {text-align: center;}
+.navbar-default .navbar-nav>li>a {color:#fff;text-transform: uppercase;font-size: 2.125em;}
+.front-page-brand {background-image: url(/wp-content/themes/leonorzamith_master/dist/images/BRANCO.png); width: 50%; height: 69px; margin: 25px 0 0 25px; background-size: contain; display: -webkit-inline-box; background-repeat: no-repeat;} 
+.navbar-collapse {border-top: none; -webkit-box-shadow: none; box-shadow: none;}
+
+/*.navbar-brand {background-image: url(/wp-content/themes/leonorzamith_master/dist/images/LEONOR-brand.svg);height: 222px;width: 201px;display: block;background-repeat: no-repeat;} */
+.navbar-brand-wrapper {text-align: center;}
+.front-page-brand {background-image: url(/wp-content/themes/leonorzamith_master/dist/images/leonorzamith.png);width: 450px;height: 84px;display: -webkit-inline-box!important;background-repeat: no-repeat; margin: 20px 0 0 0;}
+#menu-menu-home .menu-about a {background-image: url(/wp-content/themes/leonorzamith_master/dist/images/about.png);width: 175px;height: 62px;display: -webkit-inline-box!important;background-repeat: no-repeat;margin: 20px 0 0 0;text-indent: -9999px;}
+.menu-instagram a {background-image: url(/wp-content/themes/leonorzamith_master/dist/images/instagram.png);width: 291px;height: 65px;display: -webkit-inline-box!important;background-repeat: no-repeat;margin: 20px 0 0 0;text-indent: -9999px;}
+.menu-behance a {background-image: url(/wp-content/themes/leonorzamith_master/dist/images/behance.png);width: 237px;height: 68px;display: -webkit-inline-box!important;background-repeat: no-repeat;margin: 20px 0 0 0;text-indent: -9999px;}
+.menu-shop a {background-image: url(/wp-content/themes/leonorzamith_master/dist/images/shop.png);width: 157px;height: 74px;display: -webkit-inline-box!important;background-repeat: no-repeat;margin: 20px 0 0 0;text-indent: -9999px;}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {color:#000;}
+
+/* header text styles */
+span.site-title {font-size: 3.5em;text-transform: uppercase; font-family: 'Lora', serif; font-weight: 400;line-height: 1.75em;}
+span.site-title-divider {display:block;}
+span.site-subtitle {font-size: 2.5em; line-height: 0.75em; font-family: 'Lora', serif;}
+
+.grid {width: 100% !important;}
+.grid, .grid-item {
+	margin: 0 auto;
+	padding: 0;
+}
+.grid-item {/* padding-bottom: 30px!important; */margin-bottom: 30px;}
+.gutter-sizer {width: 30px;}
+/* .gutter-sizer { width: 1.33%; } */
+
+/* infinite scroll */
+/* reveal grid after images loaded */
+.grid.are-images-unloaded {
+  opacity: 0;
+}
+/* hide by default */
+.grid.are-images-unloaded .image-grid__item {
+  opacity: 0;
+}
+
+.entry-content img {
+	width:100%;
+	height:auto;
+/* 	padding: 30px; */
+}
+.ias-trigger {
+	position: absolute;
+	bottom: 0;
+}
+.ias_noneleft {
+	text-align: center;
+	display: block;
+	position: absolute;
+	bottom: 10px;
+}
+
+h1.entry-title {font-size: 1em;text-align: center;}
+
+/* WORK ARCHIVE */
+.post-type-archive-digital article header,
+.post-type-archive-acrylic article header {
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+	.navbar-header {transform: scale(0.7);}
+	.front-page-brand {width: 320px; height:59px;}
+}
+@media (min-width: 768px) {
+	
+  .navbar-default .navbar-nav>li>a {color:#fff;text-transform: uppercase;font-size: 1.125em; padding: 5px;  font-weight: 400;}
+  .navbar.navbar-default .navbar-nav {
+    /* width: 100%; */
+    /* text-align: center; */
+  }
+  .navbar-header {
+  padding-left: 40px;
+  padding-top: 40px;
+  }
+  .navbar.navbar-default .navbar-nav > li {
+  	/*     display: inline-block; */
+  	display:block;
+	text-align: left;
+    float: none
+  }
+  .grid-sizer, .grid-item {width: calc(50% - 30px);}
+  .grid-item--width2 { width: calc(50% - 30px); }
+}
+@media (min-width: 992px) {
+	.grid-sizer, .grid-item {width: calc(33.33% - 30px);}
+	.grid-item--width2 { width: calc(66.66% - 30px); }
+}
